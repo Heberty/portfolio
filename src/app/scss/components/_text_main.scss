@@ -1,0 +1,50 @@
+.text-main {
+
+    &-title {
+        @extend .mBold;
+
+        color: red;
+
+        font-size: 45px;
+
+        @media(min-width: 576px) {
+            font-size: 60px;
+        }
+
+        @media(min-width: 768px) {
+            font-size: 80px;
+        }
+
+        @media(min-width: 992px) {
+            font-size: 90px;
+        }
+
+        @media(min-width: 1200px) {
+            font-size: 150px;
+        }
+    }
+    
+    &-subtitle {
+        @extend .mRegular;
+
+        color: #3e3e3e;
+
+        font-size: 18px;
+
+        @media(min-width: 576px) {
+            font-size: 20px;
+        }
+
+        @media(min-width: 768px) {
+            font-size: 24px;
+        }
+
+        @media(min-width: 992px) {
+            font-size: 28px;
+        }
+
+        @media(min-width: 1200px) {
+            font-size: 30px;
+        }
+    }
+}
