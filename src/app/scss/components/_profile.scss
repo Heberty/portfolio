@@ -1,0 +1,27 @@
+.profile {
+    display: inline-block;
+    position: relative;
+
+    &:after {
+        content: "";
+        display: inline-block;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        z-index: 1;
+        left: 15px;
+        top: 15px;
+        background-color: $gray-dk;
+    }
+
+    &-image {
+        position: relative;
+        z-index: 2;
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 200px;
+        height: 200px;
+        display: inline-block;
+    }
+}

@@ -1,0 +1,63 @@
+.card-portfolio {
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: $padding-lg;
+    text-decoration: none;
+    display: inline-block;
+
+    &:after {
+        content: "";
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: inline-block;
+        background-image: linear-gradient(rgba(0,0,0,.8), transparent, rgba(0,0,0,.8));
+        z-index: 1;
+    }
+
+    &:hover {
+        text-decoration: none;
+    }
+
+    &-header,
+    &-body,
+    &-footer {
+        z-index: 2;
+        position: relative;
+    }
+
+    &-header {
+
+        &-title,
+        &-subtitle {
+            color: #fff;
+            margin-bottom: 0;
+        }
+    
+        &-title {
+            @extend .mExtraBold;
+            
+            font-size: 18px;
+            text-transform: uppercase;
+        }
+    
+        &-subtitle {
+            @extend .mBold;
+    
+            font-size: 14px;
+        }
+    }
+
+    &-body {
+        &-text {
+            @extend .mRegular;
+    
+            font-size: 14px;
+            color: #fff;
+        }
+    }
+}

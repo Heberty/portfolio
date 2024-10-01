@@ -1,3 +1,12 @@
 @import '~bootstrap/dist/css/bootstrap.min.css';
+
+@import './communs/colors';
 @import './communs/fonts';
+@import './communs/communs';
+@import './communs/variables';
+@import './communs/button_default';
+
 @import './components/text_main';
+@import './components/card_portfolio';
+@import './components/profile';
+@import './components/section';

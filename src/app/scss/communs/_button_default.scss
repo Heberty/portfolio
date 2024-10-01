@@ -1,0 +1,30 @@
+.btn-default {
+    border: 2px solid $red;
+    background-color: transparent;
+    display: inline-block;
+    padding: 10px 10px;
+    text-decoration: none;
+
+    &:hover {
+        background-color: $red;
+
+        .btn-default-text {
+            color: #fff;
+        }
+    }
+
+    &-text {
+        @extend .mRegular;
+
+        font-size: 18px;
+        color: $red;
+        text-transform: uppercase;
+        margin-bottom: 0;
+        line-height: 1;
+        text-decoration: none;
+
+        @media(min-width: 992px) {
+            font-size: 22px;
+        }
+    }
+}
